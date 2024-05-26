@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <title>By Krishna</title>
+</head>
+<body>
+    <script type="text/javaScript">
+        var n=parseInt(prompt("enter a number"));
+        adddigits(n);
+        function adddigits(n)
+        {
+            var r,sum=0;
+            while(n!=0)
+            {
+                r=n%10;
+                sum+=r;
+                n=parseInt(n/10);
+            }
+            document.write("sum of digits os number is"+sum);
+        }
+    </script>
+    
+</body>
+</html>

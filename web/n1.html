@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>By Krishna</title>
+</head>
+<body>
+    <form>
+        <label>Name</label>
+        <input type="text" id="name"><br>
+        <label>Number</label>
+        <input type="text" id="number"><br>
+        <label>Gender</label>
+        <input type="radio" id="male" value="male" name="gender">Male
+        <input type="radio" id="female" value="female" name="gender">Female<br>
+        <input type="submit" onclick="checking()">
+
+    </form>
+    <script type="text/javaScript">
+        function checking()
+        {
+            var pattern=/^[A-Za-z]+$/;
+            var a=document.getElementById("name").value;
+            var c=a.match(pattern);
+            if(a=="")
+            {
+                alert("please enter name");
+            }
+            else(!c)
+            {
+                alert("please enter your name properly");
+            }
+            var d=document.getElementById("number").value;
+            var pattern2=/^[0-9]+$/;
+            var e=d.match(pattern2);
+            if(d=="")
+            {
+                alert("enter the number");
+
+            }
+            else(!e)
+            {
+                alert("is not a number");
+            }
+           
+            var male=document.getElementById("male").checked;
+            var female=document.getElementById("female").checked;
+            if(male||female)
+            {
+                alert("gender selected");
+            }
+            else
+            {
+                alert("please select the gender");
+            }
+
+        }
+    </script>
+</body>
+</html>

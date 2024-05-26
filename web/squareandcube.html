@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>By Krishna</title>
+</head>
+<body>
+    <tr>
+        <td><input type="text" id="a" name="num" placeholder="enter a number"></td></tr>
+    <tr><td><input type="submit" value="ok" onclick=sqcuberoot()></td></tr></table>
+    <div id="number"></div>
+    
+</body>
+<script>
+    function sqcuberoot()
+    {
+        var x,y,z;
+        x=parseInt(document.getElementById("a").value);
+        y=Math.sqrt(x);
+        z=Math.cbrt(x);
+        document.getElementById("number").innerHTML="square root of "+x+" = "+y+"and Cuberoot ="+z;
+    }
+
+</script>
+</html>

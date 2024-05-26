@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>By Krishna</title>
+</head>
+<body>
+    <script>
+        var p=parseInt(prompt("enter the principal"));
+        var t=parseInt(prompt("enter the time"));
+        var r=parseInt(prompt("enter the rate"));
+        var si=(p*t*r)/100;
+        var ci=(p*Math.pow((1+(r/100)),t))-1;
+        document.write("the SI is "+si+"<br>");
+        document.write("the CI is"+ci);
+
+    </script>
+    
+</body>
+</html>

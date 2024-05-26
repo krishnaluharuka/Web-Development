@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <title>By Krishna</title>
+</head>
+<body>
+    <script type="text/javaScript">
+        var n=parseInt(prompt("enter a number"));
+        countdigits(n);
+        function countdigits(n)
+        {
+            var count=0;
+            while(n!=0)
+            {
+                
+                n=parseInt(n/10);
+                count++;
+            }
+            document.write("number of digits in a number is "+count);
+        }
+    </script>
+    
+</body>
+</html>

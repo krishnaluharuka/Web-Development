@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>By Krishna</title>
+    
+</head>
+<body>
+    <table>
+        <tr>
+            <td><input type="text" id="a" name="num" placeholder="enter a number"></td></tr>
+        <tr><td><input type="submit" value="ok" onclick=sqroot()></td></tr></table>
+        <div id="number"></div>
+    </body>
+    <script>
+        function sqroot()
+        {
+            var x,y;
+         x=parseInt(document.getElementById("a").value);
+         y=Math.sqrt(x);
+            document.getElementById("number").innerHTML="Square root of "+x+"="+y;
+        }
+    </script>
+
+</html>

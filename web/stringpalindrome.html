@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>By Krishna</title>
+</head>
+<body>
+    <script>
+        var str=prompt("enter a string");
+        strpalindrome(str);
+        function strpalindrome(str)
+        {
+        
+            var split=str.split(" ") 
+            var reverse=split.reverse();
+            var joining=reverse.join(" ");
+
+            
+            document.write("reverse of string is "+joining+"<br>");
+            if(str==joining)
+            {
+                document.write("palindrome");
+            }
+            else
+            {
+                document.write("not palindrome");
+            }
+        }
+    </script>
+
+    
+</body>
+</html>
